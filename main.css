@@ -1,4 +1,4 @@
-#btn_btm, #btn_top {
+#btn_bottom {
   border-radius: 20em;
   background-color: #ff52bf;
   border: none;
@@ -8,38 +8,52 @@
   font-weight: bold;
   padding: 15px; }
 
+#nav_button {
+  border-radius: 22em;
+  background-color: #d6d6d6;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: #0a0a0a;
+  font-weight: bold;
+  padding: 11px; }
+
 html,
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0; }
 
+h1,
+h3 {
+  font-family: 'Poppins', sans-serif; }
+
+.ontop {
+  display: grid;
+  grid-template-areas: "head head" "info pic";
+  grid-template-rows: 50px 350px;
+  grid-template-columns: 50% 50%;
+  grid-gap: 15px; }
+
+.header {
+  grid-area: head; }
+
+#nav_button {
+  width: 13em; }
+
+.sxn {
+  grid-area: info; }
+
+#btn_bottom {
+  width: 18em; }
+
+.main {
+  margin-left: 9em; }
+
 .attribution {
   font-size: 11px;
   text-align: center; }
   .attribution a {
     color: #3e52a3; }
-
-h1, h3 {
-  font-family: 'Poppins', sans-serif; }
-
-#btn_btm {
-  width: 18em; }
-
-#btn_top {
-  width: 13em; }
-
-#ontop {
-  background-image: url("images/bg-hero-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed; }
-
-.top_text {
-  margin-left: 3em; }
-
-.main {
-  margin-left: 9em; }
 
 /*# sourceMappingURL=main.css.map */

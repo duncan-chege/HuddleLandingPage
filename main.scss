@@ -1,5 +1,6 @@
 $pink: hsl(322, 100%, 66%);
 $white: #ffffff;
+$black: #0a0a0a;
 
 @import 'placeholder';
 
@@ -10,41 +11,53 @@ body {
     margin: 0;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    a{
-        color: hsl(228, 45%, 44%);
-    }
-}
-
-h1,h3{
+h1,
+h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-#btn_btm{
+.ontop {
+    // background-image: url('images/bg-hero-desktop.svg');
+    // background-repeat: no-repeat ;
+    // background-position: center center;
+    // background-size: cover;
+    // background-attachment: fixed; //centered vertically & horizontally
+    display: grid;
+    grid-template-areas: "head head"
+        "info pic";
+    grid-template-rows: 50px 350px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 15px;
+}
+
+.header {
+    grid-area: head;
+    // width: 10em;
+}
+
+#nav_button {
+    @extend %button2;
+    width: 13em;
+}
+
+.sxn {
+    grid-area: info;
+}
+
+#btn_bottom {
     @extend %button;
     width: 18em;
 }
 
-#btn_top{
-    @extend %button;
-    width: 13em;
-}
-
-#ontop{
-    background-image: url('images/bg-hero-desktop.svg');
-    background-repeat: no-repeat ;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed; //centered vertically & horizontally
-}
-
-.top_text{
-    margin-left: 3em;
-}
-
-.main{
+.main {
     margin-left: 9em;
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
