@@ -51,7 +51,7 @@ h3 {
 
 .navlogo {
   margin: 30px 0 0 30px;
-  object-fit: cover; }
+  width: 10em; }
 
 .try_btn {
   grid-area: navbtn;
