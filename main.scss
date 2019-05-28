@@ -1,13 +1,14 @@
 $pink: hsl(322, 100%, 66%);
 $white: #ffffff;
-$black: #0a0a0a;
+$dark-cyan: hsl(192, 100%, 9%);
+$btn-margin: 30px 50px 60px 0;
 
 @import 'placeholder';
 
 html,
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -17,36 +18,60 @@ h3 {
 }
 
 .ontop {
-    // background-image: url('images/bg-hero-desktop.svg');
-    // background-repeat: no-repeat ;
-    // background-position: center center;
-    // background-size: cover;
-    // background-attachment: fixed; //centered vertically & horizontally
+    background-image: url('images/bg-hero-desktop.svg');
+    background-repeat: no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; //centered vertically & horizontally
+    background-color: rgba(12, 188, 197, 0.05);
     display: grid;
-    grid-template-areas: "head head"
-        "info pic";
-    grid-template-rows: 50px 350px;
-    grid-template-columns: 50% 50%;
-    grid-gap: 15px;
+    grid-template-areas: "head navbtn"
+                         "info pic";
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 40% 60%;
+    grid-gap: 10px;
+    height: 100vh;
 }
 
 .header {
     grid-area: head;
-    // width: 10em;
+}
+
+.navlogo{
+    @extend %logo;
+    margin: 30px 0 0 30px;
+    object-fit: cover
+}
+
+.try_btn{
+ grid-area: navbtn;
+ margin: $btn-margin;
+ justify-self: end;
 }
 
 #nav_button {
-    @extend %button2;
-    width: 13em;
+    @extend %button;
 }
 
 .sxn {
     grid-area: info;
+    margin-top: 10%;
+    margin-left: 30px;
 }
 
 #btn_bottom {
-    @extend %button;
-    width: 18em;
+    @extend %button2;
+    // width: 18em;
+}
+
+.side_image{
+    grid-area: pic;
+    margin-left: 4em;
+    margin-right: 20px;
+    align-self: start;
+}
+.mockups{
+    width: 100%;
 }
 
 .main {

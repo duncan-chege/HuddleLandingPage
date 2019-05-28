@@ -1,4 +1,21 @@
+
+%logo{
+    width: 100%;
+}
+
 %button {
+    border-radius: 22em;
+    background-color: $white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: $dark-cyan;
+    font-weight: bold;
+    padding: 14px 40px;
+    box-shadow: 2px 2px 10px 0.6px rgb(214, 213, 213)
+}
+
+%button2 {
     border-radius: 20em;
     background-color: $pink;
     border: none;
@@ -7,15 +24,4 @@
     color: $white;
     font-weight: bold;
     padding: 15px;
-}
-
-%button2 {
-    border-radius: 22em;
-    background-color: #d6d6d6;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    color: $black;
-    font-weight: bold;
-    padding: 11px;
 }
