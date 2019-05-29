@@ -71,4 +71,13 @@ h3 {
     .sxn .side-image img {
       width: 100%; }
 
+.main {
+  padding: 70px 20px 40px 20px; }
+  .main .card {
+    box-shadow: 0 4px 8px 0 rgba(160, 157, 157, 0.25);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px; }
+
 /*# sourceMappingURL=main.css.map */

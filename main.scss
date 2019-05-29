@@ -78,24 +78,17 @@ h3 {
     }
 }
 
-// #btn_bottom {
-//     @extend %button2;
-//     // width: 18em;
-// }
+.main {
+    padding: 70px 20px 40px 20px;
 
-// .side_image{
-//     grid-area: pic;
-//     margin-left: 4em;
-//     margin-right: 20px;
-//     align-self: start;
-// }
-// .mockups{
-//     width: 100%;
-// }
-
-// .main {
-//     margin-left: 9em;
-// }
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(160, 157, 157, 0.25);  //border radius to go all round the card
+        padding: 16px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+}
 
 // .attribution {
 //     font-size: 11px;
