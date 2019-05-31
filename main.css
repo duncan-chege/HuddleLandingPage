@@ -9,7 +9,7 @@
   padding: 14px 30px;
   box-shadow: 2px 2px 10px 0.6px #d6d5d5; }
 
-.sxn .info button {
+.sxn .info button, .bottom-sxn .ready-card button {
   border-radius: 20em;
   background-color: #ff52bf;
   border: none;
@@ -17,7 +17,8 @@
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
-  padding: 15px; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 html,
 body {
@@ -97,5 +98,19 @@ h3 {
       width: 60%;
       padding-bottom: 40px;
       padding-left: 25%; }
+
+.bottom-sxn {
+  display: grid; }
+  .bottom-sxn .ready-card {
+    box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.18);
+    background-color: #ffffff;
+    border-radius: 10px;
+    justify-self: center;
+    padding: 3%; }
+    .bottom-sxn .ready-card h3 {
+      text-align: center; }
+    .bottom-sxn .ready-card button {
+      width: 265px;
+      margin-left: 15%; }
 
 /*# sourceMappingURL=main.css.map */

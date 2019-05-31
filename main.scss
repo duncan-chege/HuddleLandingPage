@@ -114,6 +114,28 @@ h3 {
     }
 }
 
+.bottom-sxn{
+    display: grid;
+    .ready-card{
+        box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.18);
+        background-color: #ffffff;
+        border-radius: 10px;
+        justify-self: center;
+        // margin-bottom: 40px;
+        padding: 3%;
+        // width: 40%;
+        
+        h3{
+            text-align: center;
+        }
+        button{
+            @extend %button2;
+            width: 265px;
+            margin-left: 15%;
+        }
+    }
+}
+
 // .attribution {
 //     font-size: 11px;
 //     text-align: center;
