@@ -64,7 +64,8 @@ h3 {
     width: auto; }
     .sxn .info button {
       margin-top: 30px;
-      max-width: 100%; }
+      max-width: 100%;
+      margin-bottom: 60px; }
   .sxn .side-image {
     justify-self: center; }
     .sxn .side-image img {
@@ -78,16 +79,20 @@ h3 {
   margin: 10px;
   box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.25);
   background-color: #ffffff;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-bottom: 40px;
+  margin-top: 60px; }
   .card .card-details {
     flex-basis: 300px;
     flex-grow: 1;
     flex-shrink: 0;
-    margin-right: 20px; }
+    margin-right: 20px;
+    max-width: 500px; }
   .card .card-image {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 300px; }
+    flex-basis: 300px;
+    margin-right: 30px; }
     .card .card-image img {
       width: 100%;
       padding-bottom: 40px; }
