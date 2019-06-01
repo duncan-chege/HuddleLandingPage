@@ -39,7 +39,6 @@ h3 {
 .header {
     grid-area: head;
 
-    // margin: 30px 0 0 20px;
     img {
         max-width: 100%;
     }
@@ -138,17 +137,32 @@ h3 {
 
 .footer{
     background-color: $dark-cyan;
+    color: $white;
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        filter: invert(1) sepia(1) brightness(11);
+        padding-top: 8em;
+    }
 
     .footer-details{
         margin-left: 40px;
         display: grid;
-        padding-top: 135px;
-        color: $white;
+        // grid-template-areas: 'contact us';
+        // grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+        // grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+
         .contact-info{
-            max-width: 24em;
-            .logo{
-                filter: invert(1) sepia(1) brightness(11);
-            }
+            max-width: 22em;
+            // grid-area: contact;
+            // .logo{
+            //     display: flex;
+            //     flex-direction: row;
+            //     filter: invert(1) sepia(1) brightness(11);
+            // }
             .location{
                 display: flex;
                 flex-direction: row;
@@ -182,6 +196,12 @@ h3 {
                 }
             }
         }
+
+        .us{
+            padding-top: 60px;
+            max-width: 20em;
+        }
+
     }
 }
 // .attribution {
