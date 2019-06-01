@@ -102,15 +102,54 @@ h3 {
 .bottom-sxn {
   display: grid; }
   .bottom-sxn .ready-card {
-    box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.18);
+    box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.29);
     background-color: #ffffff;
     border-radius: 10px;
     justify-self: center;
+    margin: 30px 10px -70px 10px;
     padding: 3%; }
     .bottom-sxn .ready-card h3 {
       text-align: center; }
     .bottom-sxn .ready-card button {
       width: 265px;
       margin-left: 15%; }
+
+.footer {
+  background-color: #00252e; }
+  .footer .footer-details {
+    margin-left: 40px;
+    display: grid;
+    padding-top: 135px;
+    color: #ffffff; }
+    .footer .footer-details .contact-info {
+      max-width: 24em; }
+      .footer .footer-details .contact-info .logo {
+        filter: invert(1) sepia(1) brightness(11); }
+      .footer .footer-details .contact-info .location {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: -10px; }
+        .footer .footer-details .contact-info .location img {
+          width: 10%;
+          height: 10%;
+          margin-top: 20px;
+          margin-right: 20px; }
+      .footer .footer-details .contact-info .call {
+        display: flex;
+        flex-direction: row; }
+        .footer .footer-details .contact-info .call img {
+          width: 5%;
+          height: 10%;
+          margin-top: 20px;
+          margin-right: 20px; }
+      .footer .footer-details .contact-info .mail {
+        display: flex;
+        flex-direction: row; }
+        .footer .footer-details .contact-info .mail img {
+          width: 5%;
+          height: 10%;
+          margin-top: 20px;
+          margin-right: 20px; }
 
 /*# sourceMappingURL=main.css.map */

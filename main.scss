@@ -1,6 +1,7 @@
 $pink: hsl(322, 100%, 66%);
 $white: #ffffff;
 $dark-cyan: hsl(192, 100%, 9%);
+$pale-cyan: hsl(193, 100%, 96%);
 $btn-margin: 30px 50px 60px 0;
 
 @import 'placeholder';
@@ -88,7 +89,7 @@ h3 {
     padding: 30px 20px 40px 20px;
     margin: 10px;
     box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.25);
-    background-color: #ffffff;
+    background-color: $white;
     border-radius: 10px;
     margin-bottom: 40px;
     margin-top: 60px;
@@ -117,13 +118,12 @@ h3 {
 .bottom-sxn{
     display: grid;
     .ready-card{
-        box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.18);
-        background-color: #ffffff;
+        box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.29);
+        background-color: $white;
         border-radius: 10px;
         justify-self: center;
-        // margin-bottom: 40px;
+        margin: 30px 10px -70px 10px;
         padding: 3%;
-        // width: 40%;
         
         h3{
             text-align: center;
@@ -136,6 +136,54 @@ h3 {
     }
 }
 
+.footer{
+    background-color: $dark-cyan;
+
+    .footer-details{
+        margin-left: 40px;
+        display: grid;
+        padding-top: 135px;
+        color: $white;
+        .contact-info{
+            max-width: 24em;
+            .logo{
+                filter: invert(1) sepia(1) brightness(11);
+            }
+            .location{
+                display: flex;
+                flex-direction: row;
+                margin-top: 30px;
+                margin-bottom: -10px;
+                img{
+                    width: 10%;
+                    height: 10%;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+            .call{
+                display: flex;
+                flex-direction: row;
+                img{
+                    width: 5%;
+                    height: 10%;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+            .mail{
+                display: flex;
+                flex-direction: row;
+                img{
+                    width: 5%;
+                    height: 10%;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
 // .attribution {
 //     font-size: 11px;
 //     text-align: center;
