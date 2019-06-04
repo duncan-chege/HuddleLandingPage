@@ -155,8 +155,18 @@ h3 {
           height: 10%;
           margin-top: 20px;
           margin-right: 20px; }
-    .footer .footer-details .us {
-      padding-top: 60px;
-      max-width: 20em; }
+    .footer .footer-details .aboutcareer {
+      display: flex;
+      flex-direction: row;
+      padding-top: 25px; }
+      .footer .footer-details .aboutcareer .us {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100px; }
+      .footer .footer-details .aboutcareer .career {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100px;
+        justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */

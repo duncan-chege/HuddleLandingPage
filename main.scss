@@ -106,28 +106,31 @@ h3 {
         flex-shrink: 0;
         flex-basis: 300px;
         margin-right: 30px;
+
         img {
             width: 60%;
             padding-bottom: 40px;
-           padding-left: 25%;
+            padding-left: 25%;
         }
     }
 }
 
-.bottom-sxn{
+.bottom-sxn {
     display: grid;
-    .ready-card{
+
+    .ready-card {
         box-shadow: -1px -1px 14px 6px rgba(160, 157, 157, 0.29);
         background-color: $white;
         border-radius: 10px;
         justify-self: center;
         margin: 30px 10px -70px 10px;
         padding: 3%;
-        
-        h3{
+
+        h3 {
             text-align: center;
         }
-        button{
+
+        button {
             @extend %button2;
             width: 265px;
             margin-left: 15%;
@@ -135,18 +138,18 @@ h3 {
     }
 }
 
-.footer{
+.footer {
     background-color: $dark-cyan;
     color: $white;
 
-    .logo{
+    .logo {
         display: flex;
         flex-direction: row;
         filter: invert(1) sepia(1) brightness(11);
         padding-top: 8em;
     }
 
-    .footer-details{
+    .footer-details {
         margin-left: 40px;
         display: grid;
         // grid-template-areas: 'contact us';
@@ -155,40 +158,39 @@ h3 {
         // grid-template-columns: 50% 50%;
         grid-gap: 10px;
 
-        .contact-info{
+        .contact-info {
             max-width: 22em;
-            // grid-area: contact;
-            // .logo{
-            //     display: flex;
-            //     flex-direction: row;
-            //     filter: invert(1) sepia(1) brightness(11);
-            // }
-            .location{
+            .location {
                 display: flex;
                 flex-direction: row;
                 margin-top: 30px;
                 margin-bottom: -10px;
-                img{
+
+                img {
                     width: 10%;
                     height: 10%;
                     margin-top: 20px;
                     margin-right: 20px;
                 }
             }
-            .call{
+
+            .call {
                 display: flex;
                 flex-direction: row;
-                img{
+
+                img {
                     width: 5%;
                     height: 10%;
                     margin-top: 20px;
                     margin-right: 20px;
                 }
             }
-            .mail{
+
+            .mail {
                 display: flex;
                 flex-direction: row;
-                img{
+
+                img {
                     width: 5%;
                     height: 10%;
                     margin-top: 20px;
@@ -196,14 +198,33 @@ h3 {
                 }
             }
         }
+        .aboutcareer {
+            display: flex;
+            flex-direction: row;
+            // max-width: 40rem;
+            padding-top: 25px;
 
-        .us{
-            padding-top: 60px;
-            max-width: 20em;
+            .us {
+                // padding-top: 25px;
+                // max-width: 20em;
+                // padding-left: 25px;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 100px;
+            }
+
+            .career {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 100px;
+                // padding-top: 25px;
+                // max-width: 20em;
+                justify-content: center;
+            }
         }
-
     }
 }
+
 // .attribution {
 //     font-size: 11px;
 //     text-align: center;
