@@ -141,6 +141,7 @@ h3 {
 .footer {
     background-color: $dark-cyan;
     color: $white;
+    height: 100%;
 
     .logo {
         display: flex;
@@ -150,16 +151,13 @@ h3 {
     }
 
     .footer-details {
-        margin-left: 40px;
+        margin-left: 20px;
         display: grid;
-        // grid-template-areas: 'contact us';
-        // grid-template-columns: 50% 50%;
         grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-        // grid-template-columns: 50% 50%;
-        grid-gap: 10px;
 
         .contact-info {
             max-width: 22em;
+
             .location {
                 display: flex;
                 flex-direction: row;
@@ -198,38 +196,51 @@ h3 {
                 }
             }
         }
+
         .aboutcareer {
             display: flex;
-            flex-direction: row;
-            // max-width: 40rem;
+            flex-wrap: wrap;
             padding-top: 25px;
 
-            .us {
-                // padding-top: 25px;
-                // max-width: 20em;
-                // padding-left: 25px;
-                flex-grow: 1;
-                flex-shrink: 0;
-                flex-basis: 100px;
-            }
-
+            .us,
             .career {
+                max-width: 10em;
                 flex-grow: 1;
                 flex-shrink: 0;
-                flex-basis: 100px;
-                // padding-top: 25px;
-                // max-width: 20em;
-                justify-content: center;
+                flex-basis: 400px;
             }
         }
+
+        .socialmedia {
+            display: flex;
+            // justify-self: center;
+            padding-top: 30px;
+
+            .accounts {
+                margin-left: -20px;
+            }
+
+            i {
+                padding-left: 20px;
+            }
+
+            .copyright {
+                align-self: flex-end;
+                margin: 60px 0px 30px -120px;
+                font-size: 14px;
+            }
+        }
+
     }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 30px;
+
+        a {
+            color: #ff52bf;
+        }
+    }
+
 }
-
-// .attribution {
-//     font-size: 11px;
-//     text-align: center;
-
-//     a {
-//         color: hsl(228, 45%, 44%);
-//     }
-// }
